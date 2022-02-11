@@ -1,0 +1,19 @@
+<!-- form이란, 사용자가 입력한 정보를 서버로 전송할 때 사용하는 태그 -->
+<!-- input 태그를 통해 입력을 받으며 type은 text, password 등으로 지정,
+type에서 submit은 클릭 버튼-->
+<!-- 넘겨주는 컨트롤(필드)마다 이름을 지정해주어야한다. -->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>form 기본문법</title>
+  </head>
+  <body>
+    <form action="http://localhost/login.php"> <!-- action을 통해 어디로 전송할지 지정 -->
+      <p>아이디 : <input type = "text" name = "id"</p>
+      <p>비밀번호 : <input type = "password" name = "pwd"</p>
+      <p>주소 : <input type "text" name = "address"</p>
+      <p><input type="submit"></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- td 내부에 속성으로 colspan, lowspan 등으로 열, 행을 합칠 수 있다. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>table태그(표)</title>
+  </head>
+  <body>
+     <table border = "3">
+       <thead>
+          <tr>
+            <th>이름</th>   <th>성별</th>   <th>주소</th> <th>회비</th>
+          </tr>
+       </thead>
+
+        <tbody>
+
+         <tr>
+           <td>홍길동</td>   <td>남</td>   <td rowspan = "2">활빈당 아파트</td> <td>1000</td>
+         </tr>
+
+        <tr>
+          <td>신사임당</td>   <td>여</td>   <td>500</td>
+        </tr>
+
+        <tfoot>
+          <td colspan = "3">합계</td>  <td>1500</td>
+        </tfoot>
+
+        </tbody>
+
+     </table>
+  </body>
+</html>
