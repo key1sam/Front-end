@@ -1,0 +1,22 @@
+/* CSS 박스모델 속성 */
+
+.container .item { /* .container 클래스에서 띄어쓰기 후 자손 클래스 */
+    width: 200px;
+    height: 100px;
+    background-color : tomato;
+    margin-bottom: 20px; /* margin은 외부, bottom으로 인해 밑 부분에 여백 */
+    padding: 20px; /* 내부 여백 */
+    border: 4px solid blue;
+    /* border는 테두리를 의미하며 solid는 실선, dashed는 파선, dotted는 점선 구현 */
+    box-sizing: border-box; /*요소의 margin, padding을 고려해서 원래 사이즈를 고정해준다. */   
+}
+
+.container .item:nth-child(2) {
+    box-shadow: 10px 20px 10px rgba(0,0,0,.3);
+    /* box-shadow는 그림자이며 매개변수는 그림자의 세로, 가로, 흐림처리 수치이다.
+       rgba(r,g,b,불투명도) 이다. */
+}
+
+.container .item:nth-child(3) {
+    opacity: 0.5; /*투명도를 의미한다. 0 ~ 1이며 0이면 투명해지지만 삭제된 것은 아니다.*/
+}
