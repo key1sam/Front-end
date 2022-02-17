@@ -1,0 +1,33 @@
+<head> 태그
+<meta charset = "UTF-8">  : 문자인코딩 방식 지정
+<meta name = "author" content = "HEROPY"> : 제작자 이름 지정
+<meta name = "viewpoint" content = "width=device-width, initial-scale=" : name을 통해 정보의 종류 지정, content에 정보의 값 지정
+<link rel = "stylesheet" href = "./main.css" /> : rel은 가져올 문서 종류, href는 가져올 문서의 경로
+<link rel = "icon" href = "./favicon.png"> : 이처럼 link를 통해 파일을 가져올 수 있다.
+<style> : 스타일(CSS)를 HTML 문서 안에서 작성하는 경우에 사용. but, link태그로 css를 가져오는게 유리하다.
+<script src = ".main.js"></script> : 자바스크립트 파일을 가져올 때는 <script> 활용
+<script> : 이것처럼 하면 head 자체에서 자바스크립트 활용 가능
+ console.log('Hello world!')
+</script>
+
+<body> 태그
+
+<div> : 특별한 의미가 없는 구분을 위한 요소 (Division)
+<h1> ~ <h6> : 제목의 크기를 정할 수 있다.
+<img src = "img주소" alt = "대신 나오는 텍스트" /> : 이미지를 표현해준다. alt는 alter로 대체 텍스트
+<a href = "https://www.naver.com" target = "_blank">Naver</a> : Anchor, 다른/같은 페이지로 이동하는 하이퍼링크 지정
+<span> : 텍스트를 구분하며, <head>에서 <style>을 통해 css 지정 가능
+<br/> : 빈태그이며, 줄 바꿈을 해준다.
+<input type = "text" value = "HELLO!"> : 사용자가 데이터를 입력하는 요소, value를 통해 대화상자 내용 지정
+				     placeholder로 hint처럼, disabled를 통해 비활성화 할 수 있다.
+ 				     <input type = "text" disabled/> 
+<ul>(<ol>) : 리스트를 표현할 때 ul로 구분하며 ol은 순서가 생성된다. 
+  <li> 
+  <li> 
+</ul>
+
+주석은 ctrl + / 를 통해 활용할 수 있다.
+태그들은 사용할 수 있는 속성이 각각 정해져있는데 어디서든 사용할 수 있는 태그를 전역 태그라고 한다.
+1. <태그 style = "스타일"></태그>
+2. <태그 class = "이름"></태그> : class는 요소를 지칭하는 중복 가능한 이름
+3. <태그 id = "이름"></태그> : 요소를 지칭하는 고유한 이름
