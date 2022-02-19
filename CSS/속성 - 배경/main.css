@@ -1,0 +1,14 @@
+/* CSS 박스모델 속성 */
+
+.container .item { /*.container 클래스에서 띄어쓰기 후 자손 클래스 */
+    width: 200px;
+    height : 100px;
+    background-color : skyblue;
+    margin: 10px; /* 박스 외부의 여백 */
+    background-image: url("https://cdn.pixabay.com/photo/2020/12/02/10/30/hike-5796976__340.jpg");
+    /* 무료이미지 사이트인 Pixabay에서 이미지 하나의 url을 가져왔다. 
+       URL 함수 내부에서 " "를 활용하여야 한다.*/
+    background-size: 80px; /* 이미지의 사이즈를 조절할 수 있다. */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+} 
