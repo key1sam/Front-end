@@ -1,0 +1,27 @@
+.container { 
+    width: 400px;
+    height : 250px;
+    margin: 10px; /* 박스 외부의 여백 */
+    background-color : orange;
+    box-sizing : border-box; 
+    /* 박스의 크기가 margin, padding에 의해 변하지 않고 지정해준데로 고정 */
+    position : relative; /* 배치가 되는 기준이 되어주는 요소에 relative를 지정해준다.*/
+} 
+.container .item {
+    width : 100px;
+    height : 100px;
+    background-color : royalblue;
+}
+.container .item:nth-child(1) {
+    position: absolute; /* 배치되는 대상에게는 absolute를 지정해준다. */
+    left: 200px;
+    bottom: 100px;
+    /* 현재는 container가 기준이 되어주고 있지만, relative 기준이 없을 경우
+    <body> -> <head> -> <html> 태그 등 상위 태그로 올라가서 기준을 찾게 되며
+    기준이 존재하지 않을 시는 최종적으로 ViewPort를 기준으로 배치를 하게된다. */
+}
+.container .item:nth-child(2) {
+    position: absolute; /* 배치되는 대상에게는 absolute를 지정해준다. */
+    right: 20px;
+    top: 100px;
+}
