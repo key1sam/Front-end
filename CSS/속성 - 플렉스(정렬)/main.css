@@ -1,0 +1,18 @@
+.container { 
+    background-color : orange;
+    display : flex; /* 수평구조로 만들고 싶은 요소의 부모요소에게 flex를 부여한다. */
+    justify-content: center;
+    /* display: flex로 수평 정렬을 수행했을 때, 수평의 위치를 조절할 수 있다.
+      justify - content의 Default는 flex-start(왼쪽 정렬)이다. 다른 옵션은 flex-end : 오른쪽 정렬, center : 가운데 정렬 */
+} 
+
+.container .item {
+    width : 100px;
+    height : 100px;
+    background-color : royalblue;
+    border: 2px solid black;
+    box-sizing: border - box; /* border 테두리로 인해 늘어나는 크기를 삭제하고 기본 크기로 고정 */
+    display: flex; /* item 내부의 글자의 배치를 변경하고 싶기에 부모요소인 item에 flex 부여 */
+    justify-content: center; /* 글자를 center로 고정 */
+    align-items: center; /* 글자를 수직 가운데로 정렬 수행 */
+}
