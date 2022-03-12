@@ -1,5 +1,5 @@
 # 속성_박스 모델
- - ## HTML 코드
+ - ## HTML 코드 
  ![image](https://user-images.githubusercontent.com/87827050/154516328-2f239c39-9709-4133-97cb-b731d5a45b1d.png)
  
  - ## CSS 코드
